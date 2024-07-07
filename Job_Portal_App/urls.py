@@ -6,4 +6,5 @@ urlpatterns=[
     path('',signin,name='signin'),
     path('dashboard/',dashboard,name='dashboard'),
     path('change_password/',change_password,name='change_password'),
+    path('all_notifications/',all_notifications,name='all_notifications'),
 ]

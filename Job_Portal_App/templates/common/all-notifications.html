@@ -1,0 +1,23 @@
+{% extends 'common/base.html' %}
+
+
+{% block content %}
+<style>
+.notification.unread{
+    background-color: aqua;
+}
+</style>
+
+{% for i in notifications %}
+<div class="notification {% if i.unread %}unread{% else %}read{% endif %}">
+
+    <p>{{i.actor}} {{i.verb}}</p>
+    <small>{{i.timestamp}}</small>
+
+{% endfor %}
+    
+</div>
+
+
+
+{% endblock content %}
